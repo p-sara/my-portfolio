@@ -2,56 +2,152 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
+
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
-ol, ul {
-  list-style: none; }
+ol,
+ul {
+  list-style: none;
+}
 
-blockquote, q {
-  quotes: none; }
+blockquote,
+q {
+  quotes: none;
+}
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-header, footer, section {
+header,
+footer,
+section {
   height: 400px;
-  width: auto; }
+  width: auto;
+}
 
 body {
   background-color: #191919;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: 'Comfortaa', cursive;
+}
 
 header {
   background-image: url(../images/whiteTree_05.png);
@@ -61,21 +157,25 @@ header {
   padding: 0;
   z-index: 1;
   position: relative;
-  height: 300px; }
+  height: 100vh;
+}
 
 header ul {
   text-align: right;
   padding-right: 60px;
   position: fixed;
   top: 0;
-  right: 0; }
+  right: 0;
+  z-index: 1;
+}
 
 header ul li {
   display: inline-block;
   margin-left: 20px;
   border-bottom-left-radius: .7em;
   border-bottom-right-radius: .7em;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), transparent); }
+  background: linear-gradient(hsla(0, 0%, 100%, .5), transparent)
+}
 
 header li a {
   float: right;
@@ -85,7 +185,8 @@ header li a {
   width: 120px;
   line-height: 60px;
   text-align: center;
-  text-shadow: 0 -.04em .04em #335166; }
+  text-shadow: 0 -.04em .04em #335166;
+}
 
 header li:hover {
   transition: all .2s ease-in-out;
@@ -93,19 +194,41 @@ header li:hover {
   margin-top: -10px;
   margin-bottom: -10px;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+}
 
 header li:first-child {
-  background-color: #0019b3; }
+  background-color: rgb(0, 25, 179);
+}
 
 header li:nth-child(2) {
-  background-color: #ffbf00; }
+  background-color: rgb(255, 191, 0);
+}
 
 header li:nth-child(3) {
-  background-color: #ff20ad; }
+  background-color: rgb(255, 32, 173);
+}
 
 header li:nth-child(4) {
-  background-color: #fd8600; }
+  background-color: rgb(253, 134, 0);
+}
+
+header h1 {
+  position: relative;
+  top: 350px;
+  left: 100px;
+  display: block;
+  font-family: 'Playball', cursive;
+  font-size: 192px;
+  background: -webkit-linear-gradient(right, yellow, blue, hotpink, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#about_me {
+  height: 75vh;
+  padding-top: 150px;
+}
 
 #about_me::before {
   content: '';
@@ -114,7 +237,7 @@ header li:nth-child(4) {
   top: 200px;
   overflow: visible;
   width: 100%;
-  height: 600px;
+  height: 1100px;
   z-index: -1;
   background: white;
   -webkit-transform: skewY(-6deg);
@@ -123,7 +246,11 @@ header li:nth-child(4) {
   -o-transform: skewY(-6deg);
   transform: skewY(-6deg);
   -webkit-backface-visibility: hidden;
-  backface-visibility: initial; }
+  backface-visibility: initial;
+}
+
+
+/*About me section*/
 
 .me {
   background-color: hotpink;
@@ -132,13 +259,18 @@ header li:nth-child(4) {
   width: 300px;
   border-radius: 50%;
   border: 3.5px black dashed;
-  margin-left: 23%; }
+  margin-left: 23%;
+}
 
 .description {
   display: inline-block;
   height: 300px;
   width: 400px;
-  margin-left: 40px; }
+  margin-left: 40px;
+}
+
+
+/*my resume*/
 
 .cv {
   width: 300px;
@@ -149,10 +281,16 @@ header li:nth-child(4) {
   background-position: center;
   float: right;
   margin-right: 14%;
-  margin-top: 13%; }
+  margin-top: 13%;
+}
 
 .cv:hover {
-  background-image: url(../images/my_cv_hover.jpg); }
+  background-image: url(../images/my_cv_hover.jpg);
+}
+
+#my_resume {
+  height: 100vh;
+}
 
 #my_resume p {
   display: inline-block;
@@ -161,16 +299,17 @@ header li:nth-child(4) {
   width: 350px;
   margin-top: 14%;
   font-size: 50px;
-  color: white; }
+  color: white;
+}
 
 #my_work::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 1300px;
+  top: 1850px;
   overflow: visible;
   width: 100%;
-  height: 900px;
+  height: 950px;
   z-index: -1;
   background: white;
   background-image: url(../images/one.png);
@@ -185,6 +324,143 @@ header li:nth-child(4) {
   -o-transform: skewY(15deg);
   transform: skewY(15deg);
   -webkit-backface-visibility: hidden;
-  backface-visibility: initial; }
+  backface-visibility: initial;
+}
 
-/*# sourceMappingURL=style.css.map */
+#my_work h2 {
+  display: block;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.web {
+  display: inline-block;
+  width: 270px;
+  height: 270px;
+  flex-direction: row;
+  margin: 0;
+}
+
+.sitonchair {
+  background-image: url(../images/sitonchair.png);
+}
+
+.bhagaskara {
+  background-color: hotpink;
+}
+
+.htmlemail {
+  background-image: url(../images/email.png);
+}
+
+.shoppinglist {
+  background-image: url(../images/shopping.png);
+}
+
+.web {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.sitonchair:hover {
+  background-position: center;
+}
+
+.htmlemail:hover {
+  background-position: center;
+}
+
+.shoppinglist:hover {
+  background-position: center;
+}
+
+.info {
+  font-family: "Comic Sans MS", cursive;
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100px;
+  height: auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+  position: absolute;
+  display: none;
+}
+
+.info:after {
+  content: "";
+  display: block;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-width: 0 2px 2px 0;
+  width: 24px;
+  height: 24px;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, .5);
+  position: absolute;
+  bottom: 35px;
+}
+
+.info-sit {
+  position: absolute;
+  left: 214px;
+}
+
+.info-bhag {
+  position: absolute;
+  right: 235px;
+  top: 2117px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.info-mail {
+  position: absolute;
+  left: 214px;
+}
+
+.info-shop {
+  position: absolute;
+  right: 235px;
+  top: 2388px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.info-sit:after {
+  position: absolute;
+  left: 128px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.info-bhag:after {
+  left: -15px;
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+}
+
+.info-mail:after {
+  left: 128px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.info-shop:after {
+  left: -15px;
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+}
+
+.wrapper {
+  width: 550px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
