@@ -8,18 +8,33 @@
   <link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
   <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="js/app.js"></script>
-  <title>Sara Pstrowska portfolio</title>
+  <title>Sara Pstrowska's portfolio</title>
 </head>
 
 <body>
   <header>
-    <ul>
+    <h1>Sara Pstrowska</h1>
+    <ul class="main-nav">
       <li><a href="#about_me">About me</a></li>
       <li><a href="#my_resume">Resume</a></li>
       <li><a href="#my_work">Works</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
     <h1>Sara Pstrowska</h1>
+    <div class="window">
+      <div class="background-slider">
+    <ul class="slider">
+  <li class="photo" style="background-image: url(/images/taj.jpg);"></li>
+  <li class="photo" style="background-image: url(/images/camb.jpg);"></li>
+  <li class="photo" style="background-image: url(/images/malaga.jpg);"></li>
+  <li class="photo" style="background-image: url(/images/krak.jpg);"></li>
+</ul>
+    </div>
+    </div>
+    <div class="slider-nav">
+        <div class="left">&#187;</div>
+        <div class="right">&#188;</div>
+      </div>
   </header>
   <section id="about_me">
     <div class="me"></div>
@@ -37,21 +52,29 @@
   <section id="my_work">
     <h2>What I have done so far...</h2>
     <div class="wrapper">
-      <a href="#" class="sitonchair web"></a>
-      <div class="info info-sit">
+      <div class="around">
+        <div class ="info-prev">
         My very first project.
+          </div>
       </div>
-      <a href="#" class="bhagaskara web"></a>
-      <div class="info info-bhag">
+      <a href="#" class="sitonchair web-prev"></a>
+      <a href="#" class="bhagaskara web-next"></a>
+      <div class="around">
+      <div class="info-next">
         My very first project.
+        </div>
       </div>
-      <a href="#" class="htmlemail web"></a>
-      <div class="info info-mail">
+      <div class="around">
+      <div class="info-prev">
         My very first project.
+        </div>
       </div>
-      <a href="#" class="shoppinglist web"></a>
-      <div class="info info-shop">
+      <a href="#" class="htmlemail web-prev"></a>
+      <a href="#" class="shoppinglist web-next"></a>
+      <div class="around">
+        <div class="info-next">
         My very first project.
+        </div>
       </div>
     </div>
   </section>
