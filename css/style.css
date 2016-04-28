@@ -135,8 +135,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-header,
 footer,
 section {
   height: 400px;
@@ -149,7 +147,7 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 
-header {
+.main-header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: -10% 20%;
@@ -158,7 +156,7 @@ header {
   position: relative;
   height: 100vh; 
 }
-header::before {
+.main-header::before {
   content: '';
   position: absolute;
   left: 0;
@@ -175,7 +173,7 @@ header::before {
   transform: skewY(-4deg);
 }
 
-header .main-nav {
+.main-header .main-nav {
   text-align: right;
   padding-right: 40px;
   position: fixed;
@@ -184,7 +182,7 @@ header .main-nav {
   z-index: 2;
 }
 
-header .main-nav li {
+.main-header .main-nav li {
   display: inline-block;
   margin-left: 20px;
   border-bottom-left-radius: .7em;
@@ -192,7 +190,7 @@ header .main-nav li {
   background: linear-gradient(hsla(0, 0%, 100%, .5), transparent)
 }
 
-header li a {
+.main-header li a {
   float: right;
   color: white;
   font-size: 20px;
@@ -203,7 +201,7 @@ header li a {
   text-shadow: 0 -.04em .04em #335166;
 }
 
-header .main-nav li:hover {
+.main-header .main-nav li:hover {
   transition: all .2s ease-in-out;
   padding-top: 10px;
   margin-top: -10px;
@@ -212,22 +210,22 @@ header .main-nav li:hover {
   z-index: 100;
 }
 
-header .main-nav li:first-child {
+.main-header .main-nav li:first-child {
   background-color: rgb(0, 25, 179);
 }
 
-header .main-nav li:nth-child(2) {
+.main-header .main-nav li:nth-child(2) {
   background-color: rgb(255, 191, 0);
 }
 
-header .main-nav li:nth-child(3) {
+.main-header .main-nav li:nth-child(3) {
   background-color: rgb(255, 32, 173);
 }
 
-header .main-nav li:nth-child(4) {
+.main-header .main-nav li:nth-child(4) {
   background-color: rgb(253, 134, 0);
 }
-header h1 {
+.main-header h1 {
   font-family: 'Playball', cursive;
   font-size:90px;
   position:absolute;
@@ -350,7 +348,7 @@ display:inline-block;
 
 /*my resume*/
 
-.cv {
+/*.cv {
   width: 300px;
   height: 400px;
   background-image: url(../images/my_cv_hover0.jpg);
@@ -378,7 +376,109 @@ display:inline-block;
   margin-top: 14%;
   font-size: 50px;
   color: white;
+}*/
+
+#skills-section {
+    width:600px;
+    color:hotpink;
 }
+.section-header {
+    
+}
+
+.skills p {
+   color:black;
+   text-transform: uppercase;
+    font-size:35px;
+    display:inline-block;
+    margin:0 auto;
+}
+.skill {
+    background-color:lightgray;
+    width:400px;
+    height:20px;
+    margin:0 auto;
+    clear:both;
+  
+}
+#skills-section h4 {
+    text-align:center;
+    font-size:90px;
+    margin:100px;
+   
+}
+.skill span {
+    background-color:#9f449b;
+    display:block;    
+    height:20px;   
+}
+.skill-1 span {
+  width:360px;    
+}
+.skill-2 span {
+  width:280px;  
+}
+.skill-3 span {
+  width: 300px; 
+}
+.skill-4 span {
+  width: 340px; 
+}
+
+.skillwrap {
+ text-align:center;
+ margin:0 auto;
+ width:400px;
+  padding:6px;
+  margin-bottom:10px;
+
+}
+.skillwrap p:first-child {
+  font-family:"lato";
+  text-transform: uppercase;
+    font-weight: bold;
+    text-align:left;
+    float: left;
+    padding:10px;
+}
+.skillwrap p:nth-child(2) {
+  text-align:right;
+  float: right;
+  padding: 10px;
+}
+@media (min-width:500px) and (orientation:landscape) {
+  #skills-section {
+    text-align:center;
+  }
+  .skillwrap {
+  display:inline-block;
+    width:230px;
+    margin:10px 80px;
+  }
+  .skill {
+    width:200px;
+    height:10px;
+}
+  .skill span {
+    background-color:#9f449b;
+    display:block;    
+    height:10px;   
+}
+  .skill-1 span {
+  width:180px;    
+}
+.skill-2 span {
+  width:140px;  
+}
+.skill-3 span {
+  width: 150px; 
+}
+.skill-4 span {
+  width: 170px; 
+}
+  
+}
+
 #my_work {
   height:1350px;
 }
