@@ -71,7 +71,7 @@ $(function() {
      $($(this)).next(".around").find(".info-next").css("display", "none");
    })
    //skills
-  $('#container').mouseenter(function(){
+  $('.skill-wrapper').mouseenter(function(){
 $('.bar-percentage[data-percentage]').each(function () {
   var progress = $(this);
   var percentage = Math.ceil($(this).attr('data-percentage'));
