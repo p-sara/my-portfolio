@@ -175,7 +175,7 @@ body {
 
 .main-header .main-nav {
   text-align: right;
-  padding-right: 40px;
+  padding-right: 20px;
   position: fixed;
   top: 0;
   right: 0;
@@ -184,7 +184,6 @@ body {
 
 .main-header .main-nav li {
   display: inline-block;
-  margin-left: 20px;
   border-bottom-left-radius: .7em;
   border-bottom-right-radius: .7em;
   background: linear-gradient(hsla(0, 0%, 100%, .5), transparent)
@@ -227,7 +226,7 @@ body {
 }
 .main-header h1 {
   font-family: 'Playball', cursive;
-  font-size:90px;
+  font-size:70px;
   position:absolute;
   left:35px;
   top:35px;
@@ -299,9 +298,10 @@ display:inline-block;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*--------------------*/
+
+/*About me section*/
 #about_me {
-  height: 75vh;
+  height: 100vh;
   padding-top: 150px;
   z-index:-2;
   color:white;
@@ -311,10 +311,11 @@ display:inline-block;
   content: '';
   position: absolute;
   left: 0;
-  top: 500px;
+    background-color: white;
+  top: 600px;
   overflow: visible;
   width: 100%;
-  height: 1100px;
+  height: 600px;
   z-index: -1;
   -webkit-transform: skewY(-6deg);
   -moz-transform: skewY(-6deg);
@@ -324,173 +325,48 @@ display:inline-block;
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
 }
-
-
-/*About me section*/
-
+.wrapp {
+    width: 60%;
+    margin:0 auto;
+    
+}
 .me {
   background-color: hotpink;
   display: inline-block;
-  height: 300px;
-  width: 300px;
+  width:12em;
+    height:12em;
   border-radius: 50%;
   border: 3.5px black dashed;
-  margin-left: 23%;
+    -webkit-shape-outside:circle();
+  -webkit-shape-margin:10px;
 }
 
 .description {
   display: inline-block;
-  height: 300px;
-  width: 400px;
+  max-width: 15em;
   margin-left: 40px;
+    color:gray;
 }
-
-
-/*my resume*/
-
-/*.cv {
-  width: 300px;
-  height: 400px;
-  background-image: url(../images/my_cv_hover0.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  float: right;
-  margin-right: 14%;
-  margin-top: 13%;
-}
-
-.cv:hover {
-  background-image: url(../images/my_cv_hover.jpg);
-}
-
-#my_resume {
-  height: 100vh;
-}
-
-#my_resume p {
-  display: inline-block;
-  float: right;
-  margin-right: 30px;
-  width: 350px;
-  margin-top: 14%;
-  font-size: 50px;
-  color: white;
-}*/
-
-/*#skills-section {
-    width:600px;
-    color:hotpink;
-}
-.section-header {
-    
-}
-
-.skills p {
-   color:black;
-   text-transform: uppercase;
-    font-size:35px;
-    display:inline-block;
+.section-header h2 {
     margin:0 auto;
-}
-.skill {
-    background-color:lightgray;
-    width:400px;
-    height:20px;
-    margin:0 auto;
-    clear:both;
-  
-}
-#skills-section h4 {
+    font-size:5em;
     text-align:center;
-    font-size:90px;
-    margin:100px;
-   
 }
-.skill span {
-    background-color:#9f449b;
-    display:block;    
-    height:20px;   
-}
-.skill-1 span {
-  width:360px;    
-}
-.skill-2 span {
-  width:280px;  
-}
-.skill-3 span {
-  width: 300px; 
-}
-.skill-4 span {
-  width: 340px; 
-}
-
-.skillwrap {
- text-align:center;
- margin:0 auto;
- width:400px;
-  padding:6px;
-  margin-bottom:10px;
-
-}
-.skillwrap p:first-child {
-  font-family:"lato";
-  text-transform: uppercase;
-    font-weight: bold;
-    text-align:left;
-    float: left;
-    padding:10px;
-}
-.skillwrap p:nth-child(2) {
-  text-align:right;
-  float: right;
-  padding: 10px;
-}
-@media (min-width:500px) and (orientation:landscape) {
-  #skills-section {
-    text-align:center;
-  }
-  .skillwrap {
-  display:inline-block;
-    width:230px;
-    margin:10px 80px;
-  }
-  .skill {
-    width:200px;
-    height:10px;
-}
-  .skill span {
-    background-color:#9f449b;
-    display:block;    
-    height:10px;   
-}
-  .skill-1 span {
-  width:180px;    
-}
-.skill-2 span {
-  width:140px;  
-}
-.skill-3 span {
-  width: 150px; 
-}
-.skill-4 span {
-  width: 170px; 
-}
-  
-}
-*/
 #container { 
   text-align: center; 
   width:auto; 
   display:inline-block;
-  margin-left:12%;
-  margin-right:12%;
+  margin-left:5em;
+  margin-right:5em;
 }
 h4 { 
   color: #CCC;
 }
 
+/*Skill section*/
+#skills-section {
 
+}
 .bar-main-container {
   margin: 10px auto;
   width: 300px;
@@ -572,13 +448,13 @@ h4 {
 /*-------------------------*/
 
 #my_work {
-  height:1350px;
+  height:750px;
 }
 #my_work::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 1850px;
+  top: 1950px;
   overflow: visible;
   width: 100%;
   height: 950px;
@@ -602,7 +478,7 @@ h4 {
 #my_work h2 {
   display: block;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 550px;
 }
 .wrapper {
   width: 100%;
