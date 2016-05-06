@@ -1,6 +1,6 @@
 $(function() {
  //slider
-  var left = $(".left");
+ /* var left = $(".left");
   var right = $(".right");
   var photo = $(".photo");
   var slider = $(".background-slider");
@@ -44,7 +44,7 @@ $(function() {
         "left": -offset + 'px'
       });
     }
-  });
+  });*/
 
   //scrolling 
   var link = $("header li a");
