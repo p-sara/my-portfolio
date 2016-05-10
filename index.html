@@ -12,15 +12,16 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <h1>Sara Pstrowska</h1>
-    <ul class="main-nav">
-      <li><a href="#about_me">About me</a></li>
-      <li><a href="#my_skills">My skills</a></li>
-      <li><a href="#my_work">Works</a></li>
+  <header id="main-header">
+    <ul class="main-nav black-nav">
+      <li class="logo"><a href="#main-header">S&#38;P</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#my_work">Works</a></li>
+      <li><a href="#my_skills">My skills</a></li>
+      <li><a href="#about_me">About me</a></li>
     </ul>
-    <h1>Sara Pstrowska</h1>
+    <div class="my_name">
+    <h1>Sara Pstrowska</h1></div>
     <div id="slides">
   <ul class="slides-container">
     <li>
@@ -53,7 +54,7 @@
   </section>
     <section id="my_skills">
     <header class="section-header">
-      <h2>My<span>skills</span></h2>
+      <h2>My<span> skills</span></h2>
     </header>
       <div class="skill-wrapper">
       <div id="container">
@@ -169,7 +170,7 @@
       </div>
   </section>
   <section id="my_work">
-    <h2>What I have done so far...</h2>
+    <h2>What I have done <span>so far...</span></h2>
     <div class="wrapper">
       <div class="around">
         <div class ="info-prev">
@@ -198,20 +199,26 @@
     </div>
   </section>
   <section id="contact">
-  <h2>Contact me</h2>
+  <h2>Contact <span>me</span></h2>
+    <ul class="decor">
+      <li class="line"></li>
+      <li class="diamond"></li>
+      <li class="line"></li>
+    </ul>
     <div class="icon-container">
-    <div class="icon-wrap"><div class="icon"></div>
+    <div class="icon-wrap"><div class="icon i-mail"></div>
     <p>sara.pstrowska@gmail.com</p></div>
-    <div class="icon-wrap"><div class="icon"></div>
-    <a href="#">Facebook</a></div>
-    <div class="icon-wrap"><div class="icon"></div><a href="#">Linkedin</a></div>
-    <div class="icon-wrap"><div class="icon"></div><a href="#">GitHub</a></div>
-      <div class="icon-wrap"><div class="icon"></div>
+      <div class="icon-wrap"><a href="https://www.facebook.com/sara.pstrowska"><div class="icon i-fb"></div></a>
+    <p>Facebook</p></div>
+      <div class="icon-wrap"><a href="https://www.linkedin.com/in/sarapstrowska"><div class="icon i-link"></div></a><p>Linkedin</p></div>
+    <div class="icon-wrap"><a href="https://github.com/p-sara"><div class="icon i-git"></div></a><p>GitHub</p></div>
+      <div class="icon-wrap"><div class="icon i-phone"></div>
       <p>PL: +48 881 696 356<br>
       UK: +44 7452 755 225</p></div>
       </div>
   </section>
-  <footer></footer>
+  <footer>
+  <p>&#169; 2016 |  Sara Pstrowska</p></footer>
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/app.js" type="text/javascript"></script>
   <script src="dist/jquery.superslides.js" type="text/javascript"></script>
