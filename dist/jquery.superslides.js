@@ -652,5 +652,7 @@ $.fn[plugin] = function(option, args) {
 };
 
 $.fn[plugin].fx = {};
+  
+  $(".slides-pagination a").html("");
 
 })(this, jQuery);
