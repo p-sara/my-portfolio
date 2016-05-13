@@ -1,8 +1,16 @@
 $(function() {
   //scrolling 
   var link = $("header li a");
+  var arrow = $(".arrow-img");
     
     link.on("click", function (){ 
+    var position = $($(this).attr("href")).position().top; 
+       $("html, body").animate({
+     scrollTop: position 
+  }, 500) 
+    });
+  
+  arrow.on("click", function (){ 
     var position = $($(this).attr("href")).position().top; 
        $("html, body").animate({
      scrollTop: position 
