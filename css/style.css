@@ -149,7 +149,15 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 h2 {
-  font-size:30px;
+  font-size:50px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.9);
+    color:black;
+}
+h4 {
+    font-size:24px;
+}
+span {
+    color:white;
 }
 #main-header {
   background-repeat: no-repeat;
@@ -279,7 +287,7 @@ h2 {
 }
 #main-header .my_story {
   position:absolute;
-    top: 40%;
+    top: 35%;
     transform: translateY(-50%);
     left:50%;
   transform: translateX(-50%);
@@ -318,7 +326,7 @@ h2 {
   margin:0 auto;
   margin-top:20px;
   position:absolute;
-  top: 65%;
+  top: 75%;
   transform: translateY(-50%);
   left:50%;
   transform: translateX(-50%);
@@ -384,10 +392,11 @@ h2 {
   margin-left: 40px;
     color:gray;
 }
-.section-header h2 {
+#about_me .description h2 {
     margin:0 auto;
-    font-size:5em;
-    text-align:center;
+    color:gray;
+    Font-size:30px;
+    text-shadow:none;
 }
 #container { 
   text-align: center; 
@@ -396,10 +405,6 @@ h2 {
   margin-left:5em;
   margin-right:5em;
 }
-h4 { 
-  color: whitesmoke;
-}
-
 /*Skill section*/
 #my_skills {
   padding-top:85px;
@@ -409,8 +414,10 @@ h4 {
   align-content: center;
   margin-bottom:200px;
 }
-#my_skills span {
-  color:black;
+#my_skills h4 {
+ text-shadow: 0px 0px 3px rgba(0,0,0,0.9); 
+text-shadow: 0px 0px 4px rgba(0,0,0,0.9);
+color: whitesmoke;
 }
 .section-header {
   font-size:10px;
@@ -553,9 +560,6 @@ h4 {
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
 }
-#my_work span {
-  color:#2C827C;
-}
 #my_work h2 {
   display: block;
   text-align: center;
@@ -643,6 +647,7 @@ h4 {
   width: 24px;
   height: 24px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+    z-index: 1;
   position: relative;
   right:-208px;
   top:-50px;
@@ -660,6 +665,7 @@ h4 {
   width: 24px;
   height: 24px;
   box-shadow: 5px 0 5px rgba(0, 0, 0, .5);
+    z-index:1;
   position: relative;
   left:-34px;
   top:-50px;
@@ -681,13 +687,13 @@ h4 {
 /*----------Conact---------------*/
 #contact {
   height:300px;
+    margin-top:50px;
+    margin-bottom:50px;
 }
 #contact h2 {
   text-align: center;
 }
-#contact span {
-  color:white;
-}
+
 .decor {
   text-align:center;
 }
@@ -801,6 +807,8 @@ footer {
   color:white;
   width:100%;
   text-align:center;
+    position:relative;
+    bottom:0;
 }
 footer p {
   padding: 15px;
