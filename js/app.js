@@ -8,6 +8,7 @@ $(function() {
        $("html, body").animate({
      scrollTop: position 
   }, 500) 
+       return false;
     });
   
   arrow.on("click", function (){ 
@@ -15,6 +16,7 @@ $(function() {
        $("html, body").animate({
      scrollTop: position 
   }, 500) 
+       return false;
     });
   
   //showing websites info
