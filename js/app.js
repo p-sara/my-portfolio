@@ -64,7 +64,15 @@ $('.bar-percentage[data-percentage]').each(function () {
           menu.addClass("black-nav");
       }      
     });
+  
+  //sliding menu on mobile screen
       
+  var icon = $("#b-icon");
+  
+  $("#b-icon").on("click", function () {
+
+    $(".main-nav").toggleClass("hide");
+  });
     
 
  

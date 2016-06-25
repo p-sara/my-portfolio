@@ -143,9 +143,7 @@ section {
 }
 
 body {
-  background-color: #191919;
   background-color: #D4AF1C;
-  /*background-color:#005F58;*/
   font-size: 20px;
   font-family: 'Comfortaa', cursive;
 }
@@ -163,7 +161,7 @@ h4 {
 span {
   color: white;
 }
-
+/*------------Header-------------*/
 #main-header {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -187,7 +185,6 @@ span {
 #main-header .black-nav {
   background: black;
 }
-
 #main-header li a {
   color: white;
   font-size: 20px;
@@ -197,22 +194,6 @@ span {
   text-align: center;
   text-shadow: 0 -.04em .04em #335166;
 }
-
-#main-header .main-nav li:first-child {
-  float: left;
-  padding: 5px 15px;
-  margin: 0px 20px;
-}
-
-#main-header .main-nav .logo a:hover {
-  font-size: 23px;
-  color: white
-}
-
-#main-header .main-nav .logo a {
-  color: #EFC32F;
-}
-
 #main-header .main-nav li {
   float: right;
   padding: 5px 15px;
@@ -230,7 +211,24 @@ span {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+#main-header .main-nav .logo  {
+  padding:0;
+}
+#main-header .main-nav .sandp {
+  float: left;
+  margin: 0px 50px;
+  padding: 5px 15px;
+}
 
+#main-header .main-nav .logo a:hover {
+  color: white
+}
+#main-header .main-nav .sandp a {
+  color: #EFC32F;
+}
+#main-header .main-nav .burger-menu {
+  display:none;
+}
 #main-header .main-nav li:not(.logo):before {
   content: "";
   position: absolute;
@@ -251,19 +249,19 @@ span {
   transition-timing-function: ease-out;
 }
 
-#main-header .main-nav li:nth-child(2):before {
+#main-header .main-nav .nav-bar li:nth-child(1):before {
   background-color: #1A423F;
 }
 
-#main-header .main-nav li:nth-child(3):before {
+#main-header .main-nav .nav-bar li:nth-child(2):before {
   background-color: #236863;
 }
 
-#main-header .main-nav li:nth-child(4):before {
+#main-header .main-nav .nav-bar li:nth-child(3):before {
   background-color: #2C827C;
 }
 
-#main-header .main-nav li:nth-child(5):before {
+#main-header .main-nav .nav-bar li:nth-child(4):before {
   background-color: #4FBDB5;
   ;
 }
@@ -280,7 +278,59 @@ span {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 690px) {
+  #main-header .main-nav {
+    height:140px;
+    width:100%;
+    padding:0;
+    background:black;
+  }
+    #main-header .main-nav .logo .nav-bar {
+      clear:both;
+      float:left;
+      text-align:center;
+      display:block;
+       width:100%;
+    } 
+    #main-header .main-nav .logo .nav-bar li {
+      background:black;
+    }
+    #main-header li a {
+      font-size: 70px;
+      line-height:90px;
+    }
+    #main-header .main-nav li:first-child {
+      margin:0;
+      display: inline-block;
+      width:45%;
+      height:120px;
+    }
+    #main-header .main-nav li:first-child a {
+      float:left;
+    }
+    #main-header .main-nav li:nth-child(2) {
+      width:45%;
+      display:inline-block;
+      height:120px;
+    }
+    #main-header .main-nav li:nth-child(2) #b-icon {
+      width:100px;
+      height:100px;
+      float:right;
+      margin:15px 15px;
+      background-image: url(../images/w-burger.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  .hide {
+  display:none;
+}
+}
+.hide {
+  display:none;
+}
 .slides-container {
   color: white;
   font-size: 80px;
@@ -360,7 +410,7 @@ span {
 }
 
 
-/*About me section*/
+/*----------------About me section-----------*/
 
 #about_me {
   height: 75vh;
