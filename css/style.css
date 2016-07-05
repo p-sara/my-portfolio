@@ -161,7 +161,10 @@ h4 {
 span {
   color: white;
 }
+
+
 /*------------Header-------------*/
+
 #main-header {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -185,6 +188,7 @@ span {
 #main-header .black-nav {
   background: black;
 }
+
 #main-header li a {
   color: white;
   font-size: 20px;
@@ -194,6 +198,7 @@ span {
   text-align: center;
   text-shadow: 0 -.04em .04em #335166;
 }
+
 #main-header .main-nav li {
   float: right;
   padding: 5px 15px;
@@ -211,9 +216,11 @@ span {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-#main-header .main-nav .logo  {
-  padding:0;
+
+#main-header .main-nav .logo {
+  padding: 0;
 }
+
 #main-header .main-nav .sandp {
   float: left;
   margin: 0px 50px;
@@ -223,12 +230,16 @@ span {
 #main-header .main-nav .logo a:hover {
   color: white
 }
+
 #main-header .main-nav .sandp a {
   color: #EFC32F;
+  margin: 35px 15px;
 }
+
 #main-header .main-nav .burger-menu {
-  display:none;
+  display: none;
 }
+
 #main-header .main-nav li:not(.logo):before {
   content: "";
   position: absolute;
@@ -278,59 +289,7 @@ span {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 690px) {
-  #main-header .main-nav {
-    height:140px;
-    width:100%;
-    padding:0;
-    background:black;
-  }
-    #main-header .main-nav .logo .nav-bar {
-      clear:both;
-      float:left;
-      text-align:center;
-      display:block;
-       width:100%;
-    } 
-    #main-header .main-nav .logo .nav-bar li {
-      background:black;
-    }
-    #main-header li a {
-      font-size: 70px;
-      line-height:90px;
-    }
-    #main-header .main-nav li:first-child {
-      margin:0;
-      display: inline-block;
-      width:45%;
-      height:120px;
-    }
-    #main-header .main-nav li:first-child a {
-      float:left;
-    }
-    #main-header .main-nav li:nth-child(2) {
-      width:45%;
-      display:inline-block;
-      height:120px;
-    }
-    #main-header .main-nav li:nth-child(2) #b-icon {
-      width:100px;
-      height:100px;
-      float:right;
-      margin:15px 15px;
-      background-image: url(../images/w-burger.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-  .hide {
-  display:none;
-}
-}
-.hide {
-  display:none;
-}
+
 .slides-container {
   color: white;
   font-size: 80px;
@@ -409,6 +368,83 @@ span {
   background-image: url(../images/arrow-red.png);
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #main-header .main-nav {
+    height: 160px;
+    width: 100%;
+    padding: 0;
+    background: black;
+  }
+  #main-header .main-nav .logo .nav-bar {
+    clear: both;
+    float: left;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  #main-header .main-nav .logo .nav-bar li {
+    background: black;
+  }
+  #main-header li a {
+    font-size: 70px;
+    line-height: 115px;
+  }
+  #main-header .sandp a {
+    line-height: 145px;
+  }
+  #main-header .main-nav li:first-child {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+  }
+  #main-header .main-nav .nav-bar li {
+    width: 100%;
+    display: block;
+    height: 120px;
+  }
+  #main-header .main-nav .sandp #b-icon {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin: 25px 55px;
+    background-image: url(../images/w-burger.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #main-header .main-nav .logo .hide {
+    display: none;
+  }
+  .arrow-img {
+    height: 160px;
+    width: 160px;
+  }
+  .slides-container {
+    font-size: 180px;
+  }
+  #main-header .slides-container p {
+    font-size: 50px;
+  }
+  #main-header .slides-container .my_name p {
+    font-size: 70px;
+    padding-top: 70px;
+  }
+  #main-header .my_story {
+    top: 25%;
+    width: 800px;
+    padding: 30px;
+  }
+  .my_story1 {
+    top: 15%;
+    left: 5%;
+  }
+  .my_story2 {
+    top: 50%;
+    transform: translateY(-30%);
+    right: 5%;
+  }
+}
+
 
 /*----------------About me section-----------*/
 
@@ -484,8 +520,44 @@ span {
   margin-right: 5em;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #about_me {
+    height: 110vh;
+  }
+  #about_me::before {
+    height: 3150px;
+    -webkit-transform: skewY(-12deg);
+    -moz-transform: skewY(-12deg);
+    -ms-transform: skewY(-12deg);
+    -o-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+  }
+  .wrapp {
+    flex-direction: column;
+  }
+  .me {
+    min-width: 700px;
+    height: 700px;
+    border: 5px black solid;
+  }
+  .description {
+    font-size: 52px;
+    font-weight: 900;
+    min-width: 550px;
+  }
+  h2,
+  #about_me .description h2 {
+    font-size: 125px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+  }
+  h2 {
+    font-size: 125px;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+  }
+}
 
-/*Skill section*/
+
+/*----------------Skill section---------------*/
 
 #my_skills {
   padding-top: 85px;
@@ -642,8 +714,34 @@ span {
   background: #122624;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #my_skills,
+  .skill-wrapper {
+    height: 2800px;
+  }
+  #my_skills h4 {
+    font-size: 55px;
+  }
+  .bar-main-container {
+    height: 150px;
+    width: 700px;
+  }
+  .skill-wrapper #container {
+    width: 700px;
+  }
+  .bar-container {
+    height: 40px;
+    margin: 45px 0;
+  }
+  .bar-percentage {
+    height: 65px;
+    margin: 25px 0px;
+    font-size: 57px;
+  }
+}
 
-/*-------------------------*/
+
+/*-----------My work--------------*/
 
 #my_work {
   height: 750px;
@@ -815,6 +913,62 @@ span {
   align-self: center;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #my_work {
+    height: 3000px;
+  }
+  .wrapper .around [class^="info"] {
+    display: flex;
+  }
+  .info-next:after,
+  .info-prev:after {
+    display: none;
+  }
+  .wrapper {
+    flex-direction: column;
+    font-size: 35px;
+    width: 80%;
+  }
+  .wrapper a {
+    width: 100%;
+    height: 530px;
+    background-size: cover;
+  }
+  .wrapper .around {
+    width: 100%;
+  }
+  .info-prev,
+  .info-next {
+    width: 100%;
+    padding: 20px;
+    font-size: 55px;
+  }
+  .sitonchair {
+    order: 1;
+  }
+  .sitonchair-info {
+    order: 2;
+  }
+  .bhagaskara {
+    order: 3;
+  }
+  .bhagaskara-info {
+    order: 4;
+  }
+  .htmlemail {
+    order: 5;
+  }
+  .htmlemail-info {
+    order: 6;
+  }
+  .shoppinglist {
+    order: 7;
+  }
+  .shoppinglist-info {
+    order: 8;
+  }
+}
+
 
 /*----------Conact---------------*/
 
@@ -921,6 +1075,67 @@ span {
   background-image: url(../images/phone.png);
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #contact {
+    margin-top: 1200px;
+    height:900px;
+  }
+  .decor .diamond {
+    border: 50px solid transparent;
+    border-bottom: 60px solid #ea5252;
+  }
+  .decor .diamond::after {
+    position: absolute;
+    left: -50px;
+    top: 55px;
+    border: 50px solid transparent;
+    border-top: 60px solid #ea5252;
+  }
+  .decor .line {
+    width: 100px;
+    height: 3px;
+  }
+  .icon-container {
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+  .icon {
+    height:140px;
+    width:140px;
+  }
+  .icon-wrap {
+    padding-bottom:100px;
+  }
+  .icon-container .icon-wrap .icon p {
+    font-size:40px;
+  }
+  .i-phone,
+  .i-mail {
+    width: 230px;
+    height: 230px;
+  }
+  p {
+    font-size:37px;
+  }
+  .icon-wrap:first-child {
+    order: 2;
+    width: 50%;
+  }
+  .icon-wrap:last-child {
+    order: 1;
+    width: 50%;
+  }
+  .icon-wrap:nth-child(2) {
+    order: 3;
+  }
+  .icon-wrap:nth-child(3) {
+    order: 4;
+  }
+  .icon-wrap:nth-child(4) {
+    order: 5;
+  }
+}
+
 
 /* Pulse Shrink */
 
@@ -972,8 +1187,19 @@ footer {
   text-align: center;
   position: relative;
   bottom: 0;
+  margin-top: 50px;
 }
 
 footer p {
   padding: 15px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  footer {
+    margin-top: 250px;
+    height: 90px;
+  }
+  footer p {
+    font-size: 55px;
+  }
 }

@@ -68,10 +68,12 @@ $('.bar-percentage[data-percentage]').each(function () {
   //sliding menu on mobile screen
       
   var icon = $("#b-icon");
+  var slidingMenu = $(".nav-bar");
   
-  $("#b-icon").on("click", function () {
-
-    $(".main-nav").toggleClass("hide");
+  slidingMenu.addClass("hide"); 
+  
+  icon.on("click", function () {
+    slidingMenu.toggleClass("hide"); 
   });
     
 

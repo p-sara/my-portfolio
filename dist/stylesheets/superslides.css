@@ -64,3 +64,12 @@
 .slides-pagination a.current {
   background: white;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 690px) {
+  .slides-pagination a {
+  border: 5px solid white;
+  border-radius: 35px;
+  width: 30px;
+  height: 30px;  
+}
