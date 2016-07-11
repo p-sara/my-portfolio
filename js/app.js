@@ -1,4 +1,5 @@
 $(function() {
+  
   //scrolling 
   var link = $("header li a");
   var arrow = $(".arrow-img");
@@ -65,7 +66,8 @@ $('.bar-percentage[data-percentage]').each(function () {
       }      
     });
   
-  //sliding menu on mobile screen
+  
+    //sliding menu on mobile screen
       
   var icon = $("#b-icon");
   var slidingMenu = $(".nav-bar");
@@ -75,7 +77,6 @@ $('.bar-percentage[data-percentage]').each(function () {
   icon.on("click", function () {
     slidingMenu.toggleClass("hide"); 
   });
-    
 
  
 
